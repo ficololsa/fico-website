@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous">
+    </script>
+
+    <title>Cobee The Junior Programmer</title>
+
+    <lik rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <img class="header-icon" src="./assets/header-icon.png" alt="icon-header">
+            <h3 class="title"><a href="index.html">Cobee The Coder</a></h3>
+
+            <nav>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="jumbotron">
+            <div class="jumbotron">
+                <h1 class="jumbotron-title">Dapatkan Tips Pemrograman Disini</h1>
+                <div class="header-flex">
+                    <div>
+                        <h2 class="jumbotron-text">Baru di dunia programming? <br>
+                            Belajar lewat pengembangan <span style="color: #f4a621;">Game dan Web</span>
+                            Sederhana!</h2>
+
+                        <div class="mini-text-flex">
+                            <p class="mini-text">
+                                Belajar pemrograman dasar disini
+                            </p>
+
+                            <button id="icon-up" onclick="changeText()">
+                                <i class="far fa-hand-point-up"></i>
+                            </button>
+
+                            <button id="icon-down">
+                                <i class="far fa-hand-point-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" class="jumbotron-img"
+                            src="./assets/img-header.png" alt="Jumbotron Image" width="700" height="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg class="wave1"1 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#00cba9" fill-opacity="0.5" d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,288C1120,309,1280,299,1360,293.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+
+
+        <!--Div Class 1-->
+        <section id="slider" class="section-slider">
+            <div class="image-slider">
+                <div class="slide active">
+                    <img src="assets/game-development.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Game Development</h2>
+                        <p>Instead of playing games all day long, why not create your own</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/web-development.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Web Developher</h2>
+                        <p>Every Company needs a website. take that advantage</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/web-design.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Web Design</h2>
+                        <p>Color, Transition, Animation are cool</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/kids-programming.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Kids Programming</h2>
+                        <p>better know earlier with a fun way of arranging blocks</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/apps.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Mobile Apps Development</h2>
+                        <p>Mobile Apps are very populor and needed are needed on this world</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navigation">
+                <div class="slider-btn active"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <aside>
+                <div>
+                    <h3 class="aside-title"> It's Cobee</h3>
+                    <img src="./assets/cobee.png" alt="Cobee" width="150px" height="auto" class="profile-picture">
+                    <div class="toggle">
+                        <button class="btn" id="green">
+                            <i class="fa fa-thumbs-up fa-lg"></i>
+                        </button>
+                        
+                        <button class="btn" id="red">
+                            <i class="fa fa-thumbs-down fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="search-tags-container">
+                    <div class="search-tags-container">
+                        <div class="input-tag">
+                            <h3 class="aside-title">Search Here</h3>
+                            <input type="text" id="myInput" placeholder="Search...">
+                            <span class="addBtn" onClick="newElement()">Search</span>
+                        </div>
+    
+                        <ul id="myUL" class="search-tags-list">
+                            <li class="search-tags-item">HTML</li>
+                            <li class="search-tags-item">Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="content">
+                <article id="my-project">
+                    <h3 class="article-title">My Project</h3>
+                    <div class="project-container">
+                        <div class="project">
+                            <img src="assets/desert-rally.png" alt="" width="300px" height="210px">
+                            <h4 class="project-title">Desert Rally</h4>
+                            <p class="project-description">Game Desert Rally menggunakan platform Scratch</p>
+                        </div>
+                        <div class="project">
+                            <img src="assets/memory-game.png" alt="" width="300px" height="210px">
+                            <h4 class="project-title">Memory Game</h4>
+                            <p class="project-description">Game Memory Game menggunakan platform Phaser</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="video">
+                    <div class="item-video">
+                        <h3 class="article-title">What is Coding?</h3>
+                        <!--tambahan video youtube 1 disini-->
+                        <iframe width="500" height="360" src="https://www.youtube.com/embed/XMZFUnAgOqs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <h3 class="article-title">cosing is Not Difficult!</h3>
+                        <!--tambahan video youtube 1 disini--><iframe width="500" height="360"
+                            src="https://www.youtube.com/embed/hb7Q33ysCwI" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </article>
+                <article id="maps">
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11521.727878921776!2d112.79988421438014!3d-7.288528886896667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb8bacdce84b%3A0xb57e335b8bf9901f!2sHAVANA%20COFFEE!5e0!3m2!1sen!2sid!4v1652888564064!5m2!1sen!2sid"
+                            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <h3 class="info-top">Cobee The Junior Programmer</h3>
+        </div>
+
+        <div class="social-media">
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fas fa-envelope"></i>
+        </div>
+
+        <p class="info-center"> Copyright &copy; 2021. Cobee. All Rights Reserved. </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dit/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
